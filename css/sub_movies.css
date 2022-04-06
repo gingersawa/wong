@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.nav {
+	bottom: 8vh;
+}
+
+.sub_movie_wrap {
+	width: 100vw;
+	height: 100vh;
+	max-width: 1920px;
+	min-width: 1200px;
+	overflow: hidden;
+	position: relative;
+}
+
+/* slide_container  */
+.slide_container {
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	opacity: 1;
+	pointer-events: visible;
+	transition: 1s;
+	z-index: 10000;
+}
+.slide_container .bg {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/bg4.png);
+	background-color: #4f6259;
+
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.slide_container .inner {
+	position: absolute;
+	left: 2vw;
+	right: 2vw;
+	top: 2vw;
+	bottom: 2vw;
+}
+
+.frame,
+.frame02 {
+	border-color: #d5e8e1;
+	transition: 0.5s;
+}
+.frame {
+	position: relative;
+	height: 100%;
+
+	border-width: 10px;
+	border-style: solid;
+
+	box-sizing: border-box;
+}
+
+.frame02 {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 20px;
+	bottom: 20px;
+
+	/* background: rgba(0, 0, 0, 0.3); */
+	border-width: 3px;
+	border-style: solid;
+	box-sizing: border-box;
+}
+.contents_wrap {
+	width: 50vw;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	/* background-color: magenta; */
+}
+.slide_container .title,
+.slide_container .desc {
+	width: 100%;
+	height: 100px;
+	color: #fff;
+	overflow: hidden;
+	/* position: relative; */
+	position: absolute;
+}
+.slide_container .title {
+	left: 0;
+	top: 0;
+}
+.slide_container .desc {
+	left: 0;
+	bottom: 0;
+}
+
+.slide_container .title h3 {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+
+	line-height: 100px;
+	padding: 0 50px;
+	font-size: 5rem;
+	font-weight: 800;
+}
+.slide_container .desc p {
+	transition: 0.5s;
+	height: 100px;
+	padding: 0 50px;
+}
+.main_contents {
+	width: 50vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	position: relative;
+
+	/* border: 2px solid black; */
+}
+.album_slide {
+	width: 50vw;
+	height: 500px;
+	display: flex;
+	align-items: center;
+}
+.album_list {
+	width: 100%;
+	height: 100%;
+}
+.jacket_image {
+	display: inline-block;
+	position: relative;
+	width: 20vw;
+	height: 20vw;
+}
+.jacket_image img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.see_more {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	animation: pointer 1s ease-in-out alternate infinite;
+}
+.see_more i {
+	cursor: pointer;
+	font-size: 4rem;
+	color: #fff;
+}
+
+.btn {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+.btn.prev {
+	left: 0;
+}
+.btn.next {
+	right: 0;
+}
+.btn .fas {
+	font-size: 50px;
+	line-height: 50px;
+	color: #fff;
+}
+
+@keyframes pointer {
+	0% {
+		opacity: 1;
+		transform: translate(-50%, -50%) rotate(-30deg) scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -50%) rotate(-30deg) scale(1.3);
+	}
+}
+
+/* .more_desc { */
+.more_desc.block {
+	display: block;
+}
+.more_desc {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+.more_desc.chungking {
+	background: #000;
+}
+
+.page_wrap {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+section {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+
+	opacity: 1;
+	pointer-events: visible;
+
+	transition: 1s;
+}
+.sec01 {
+	z-index: 900;
+	background: #000;
+}
+.twenty .sec01 {
+	background: rgb(0, 205, 195);
+}
+.sec02 {
+	z-index: 800;
+	background: #333;
+}
+.sec03 {
+	z-index: 700;
+	background: #555;
+}
+.sec04 {
+	z-index: 600;
+	background: rgb(188, 221, 4);
+}
+
+.text_typing {
+	font-family: "Anonymous Pro", monospace;
+	color: #fff;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+
+	width: 24em;
+	margin: 0 auto;
+	border-right: 2px solid rgba(255, 255, 255, 0.75);
+	font-size: 180%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.text_typing.ani {
+	animation: typewriter 4s steps(44) 1s 1 normal both,
+		blinkTextCursor 500ms steps(44) infinite normal;
+}
+.btn_nextPage {
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, 50%);
+	z-index: 10;
+	cursor: pointer;
+}
+.btn_nextPage i {
+	font-size: 3rem;
+	opacity: 0;
+	color: #fff;
+}
+.btn_nextPage i.ani {
+	animation: btn_nextPage 1s ease-in-out alternate infinite;
+	animation-delay: 5s;
+}
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 24em;
+	}
+}
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+@keyframes btn_nextPage {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/plugin/reset.css" />
+    <link rel="stylesheet" href="css/plugin/slick.css" />
+    <link rel="stylesheet" href="css/test.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="test-slick">
+      <div class="test-slide">
+        <div class="slide-item"></div>
+        <div class="slide-item"></div>
+        <div class="slide-item"></div>
+        <div class="slide-item"></div>
+        <div class="slide-item"></div>
+      </div>
+    </div>
+
+    <div id="circle">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:space="preserve"
+        viewBox="0 0 150 150"
+      >
+        <path
+          id="circlePath"
+          d=" M 75, 75 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+        />
+        <g>
+          <text>
+            <textPath xlink:href="#circlePath">
+              Text rotating around a circle path with SVG! Text rotating around
+              a circle path with SVG!
+            </textPath>
+          </text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="pop_vinyl">
+      <div class="vin">
+        <div class="wrap">
+          <img src="images/record/vinyl.png" alt="" />
+          <img src="images/record/vinyl.png" alt="" />
+          <img src="images/record/vinyl.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/plugin/jquery-3.6.0.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script>
+      const slideSec = $(".slide_sec");
+      $(function () {
+        $(".test-slide").slick();
+      });
+    </script>
+  </body>
+</html>
