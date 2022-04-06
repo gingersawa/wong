@@ -28,6 +28,7 @@
 	width: 100vw;
 	height: 100vh;
 	background-image: url(../images/bg4.png);
+	background-repeat: repeat;
 	background-color: #4f6259;
 
 	position: relative;
