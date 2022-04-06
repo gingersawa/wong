@@ -58,7 +58,7 @@ $(function () {
 
   function list01() {
     $(".bg").css({
-      backgroundImage: "url(../images/bg4.png)",
+      backgroundImage: "url(../images/bg_pattern04.png)",
       backgroundColor: "#4f6259",
     });
     $(".frame,.frame02").css({
@@ -73,7 +73,7 @@ $(function () {
 
   function list02() {
     $(".bg").css({
-      backgroundImage: "url(../images/bg5.png)",
+      backgroundImage: "url(../images/bg_pattern03.png)",
       backgroundColor: "#891212",
     });
     $(".frame,.frame02").css({
@@ -87,7 +87,7 @@ $(function () {
 
   function list03() {
     $(".bg").css({
-      backgroundImage: "url(../images/bg3.png)",
+      backgroundImage: "url(../images/bg_pattern05.png)",
       backgroundColor: "#2f3150",
     });
     $(".frame,.frame02").css({
@@ -102,7 +102,7 @@ $(function () {
 
   function list04() {
     $(".bg").css({
-      backgroundImage: "url(../images/bg2.png)",
+      backgroundImage: "url(../images/bg_pattern07.png)",
       backgroundColor: "#4a422d",
     });
     $(".frame,.frame02").css({
